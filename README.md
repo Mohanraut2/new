@@ -19,4 +19,26 @@ We are a full-service visual production team delivering emotionally resonant con
 - Full HTML/CSS/JS frontend for our portfolio site
 - Responsive layout with mobile optimization
 - Package details, portfolio galleries, and booking contact form
-- Hosted on GitHub Pages
+- Ready for Vercel static site deployment
+
+## 🚀 Deployment with Vercel
+
+This project is configured for seamless deployment on Vercel.
+
+### Quick Setup
+1. Connect your GitHub repository to Vercel at [vercel.com](https://vercel.com)
+2. Vercel will auto-detect this as a static site and deploy automatically
+3. No build command needed – your static files deploy as-is
+
+### Configuration
+- `vercel.json` – Vercel configuration with caching headers and security settings
+- `.vercelignore` – Files excluded from deployment
+
+### Features Configured
+✅ Clean URLs (no .html extensions in URLs)  
+✅ Cache control for optimal performance  
+✅ Security headers (X-Content-Type-Options, X-Frame-Options)  
+✅ Automatic 404.html error handling  
+
+### Custom Domain
+After deployment, connect your custom domain in the Vercel dashboard under Project Settings → Domains

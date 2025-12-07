@@ -150,36 +150,6 @@ nav ul li a:hover {
     color: var(--charcoal);
 }
 
-:root {
-    --charcoal: #1C1C1E;
-    --gold: #D4AF37;
-    --teal: #1DAAA4;
-    --cream: #F9F8F4;
-    --blush: #F6D4CB;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--charcoal);
-    line-height: 1.6;
-    background-color: var(--cream);
-}
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Bebas Neue', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: normal;
-}
-.script-font {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    text-transform: none;
-}
-
 /* Chat */
 
 #aj247-chat-container {
@@ -1258,4 +1228,68 @@ form button:disabled::after {
     form input, form textarea {
         font-size: 16px; /* Prevents zoom on iOS */
     }
+}
+
+/* Footer */
+footer {
+    background-color: var(--charcoal);
+    color: white;
+    padding: 4rem 2rem 2rem;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+.footer-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+    display: block;
+}
+.footer-logo span {
+    color: var(--gold);
+}
+.footer-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--gold);
+}
+.footer-links ul {
+    list-style: none;
+}
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer-links ul li a:hover {
+    color: var(--teal);
+}
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+.social-links a:hover {
+    color: var(--gold);
+}
+.copyright {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
 }

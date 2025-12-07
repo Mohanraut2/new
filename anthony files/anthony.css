@@ -569,25 +569,26 @@ nav ul li a:hover {
 footer {
     background-color: var(--charcoal);
     color: white;
-    padding: 3rem 2rem 1rem;
+    padding: 4rem 2rem 2rem;
 }
-.footer-content {
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
-    margin-bottom: 2rem;
 }
 .footer-logo {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: white;
     margin-bottom: 1rem;
-    display: inline-block;
+    display: block;
 }
 .footer-logo span {
     color: var(--gold);
 }
-.footer-links h4 {
+.footer-links h3 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     color: var(--gold);
@@ -595,16 +596,16 @@ footer {
 .footer-links ul {
     list-style: none;
 }
-.footer-links li {
+.footer-links ul li {
     margin-bottom: 0.5rem;
 }
-.footer-links a {
+.footer-links ul li a {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
 }
-.footer-links a:hover {
-    color: var(--gold);
+.footer-links ul li a:hover {
+    color: var(--teal);
 }
 .social-links {
     display: flex;
@@ -621,8 +622,11 @@ footer {
 }
 .copyright {
     text-align: center;
+    margin-top: 3rem;
     padding-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
 }
 /* Responsive */
 /* Removed duplicate/conflicting hero section media queries for clarity and maintainability. */
