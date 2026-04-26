@@ -5,6 +5,62 @@
     --cream: #F9F8F4;
     --blush: #F6D4CB;
 }
+
+/* Meet the Team – matches index.html layout */
+.about-team {
+    padding: 2rem 0 4rem;
+}
+.about-team .about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+.team-member {
+    text-align: center;
+    color: var(--cream);
+}
+.member-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--gold);
+    margin: 0 auto 1rem;
+    display: block;
+}
+.member-name {
+    color: var(--gold);
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+}
+.member-role {
+    color: var(--teal);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+.team-member p {
+    font-size: 0.9rem;
+    color: #ccc;
+    line-height: 1.5;
+}
+@media (max-width: 768px) {
+    .team-members {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .team-members {
+        grid-template-columns: 1fr;
+    }
+}
 * {
     margin: 0;
     padding: 0;
